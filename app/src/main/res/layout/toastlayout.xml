@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cyan"
+    android:padding="8dp"
+    android:id="@+id/ll_wrapper"
+    >
+    <ImageView
+        android:id="@+id/toastimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_toast"
+        android:layout_marginEnd="8dp"
+        />
+    <TextView
+        android:id="@+id/toasttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is a coustunm toast"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+
+</LinearLayout>

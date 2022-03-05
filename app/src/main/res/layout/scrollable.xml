@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:background="@color/yellow"
+        android:padding="5dp"
+        android:progressTint="@color/cyan"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                    android:id="@+id/metting_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/android"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Android"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/textfile"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/cyan"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageButton
+                android:id="@+id/rateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_rateus"
+                android:backgroundTint="@color/purple_500"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Give Feedback"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/prog1"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="244dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="193dp"
+        android:text="Write 50 Characters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="58dp"
+
+
+        android:hint="type here"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/pb1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</LinearLayout>
